@@ -10,7 +10,7 @@ function App() {
     const handleSubmit = async () => {
         try {
             const jsonData = JSON.parse(input);
-            const res = await fetch(`${import.meta.env.BACKEND_URL}/bfhl`, {
+            const res = await fetch(`https://backend-s1to.onrender.com/bfhl`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
